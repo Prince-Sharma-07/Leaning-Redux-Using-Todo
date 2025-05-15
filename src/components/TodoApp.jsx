@@ -70,7 +70,7 @@ function AddTodoCard({ handleAddTodo }) {
                 handleAddTodo()
             }
             }
-                className='absolute bg-white flex flex-col p-4 gap-4' onClick={e => e.stopPropagation()}>
+                className='absolute bg-white rounded-lg flex flex-col p-4 gap-4' onClick={e => e.stopPropagation()}>
                 <div className='text-xl font-[500] text-center'>Add a todo</div>
                 <label className='text-md font-[600]' htmlFor='task'>Enter the Task: </label>
                 <input value={task} onChange={e => setTask(e.target.value)} className='bg-gray-100 border p-1 px-2' type="text" id='task' />
